@@ -68,4 +68,77 @@ Para testar cada padrão, basta abrir as seguintes URLs em seu navegador.
 | **Builder** | [`/builder`](http://localhost:8080/demo/builder) |
 | **Prototype** | [`/prototype`](http://localhost:8080/demo/prototype) |
 | **Factory Method** | [`/factory-method?tipo=terra`](http://localhost:8080/demo/factory-method?tipo=terra) <br> [`/factory-method?tipo=mar`](http://localhost:8080/demo/factory-method?tipo=mar) |
-| **Abstract Factory** | [`/abstract-factory?theme=light`](http://localhost:8080/
+| **Abstract Factory** | [`/abstract-factory?theme=light`](http://localhost:8080/demo/abstract-factory?theme=light) <br> [`/abstract-factory?theme=dark`](http://localhost:8080/demo/abstract-factory?theme=dark) |
+
+---
+
+### Padrões Estruturais (Structural)
+
+| Padrão | URL de Teste |
+| :--- | :--- |
+| **Adapter** | [`/adapter`](http://localhost:8080/demo/adapter) |
+| **Bridge** | [`/bridge`](http://localhost:8080/demo/bridge) |
+| **Composite** | [`/composite`](http://localhost:8080/demo/composite) |
+| **Decorator** | [`/decorator`](http://localhost:8080/demo/decorator) |
+| **Façade** | [`/facade`](http://localhost:8080/demo/facade) |
+| **Flyweight** | [`/flyweight`](http://localhost:8080/demo/flyweight) |
+| **Proxy** | [`/proxy`](http://localhost:8080/demo/proxy) |
+
+---
+
+### Padrões Comportamentais (Behavioral)
+
+| Padrão | URL de Teste |
+| :--- | :--- |
+| **Strategy** | [`/strategy?tipo=pix`](http://localhost:8080/demo/strategy?tipo=pix) <br> [`/strategy?tipo=cartao`](http://localhost:8080/demo/strategy?tipo=cartao) |
+| **Chain of Responsibility**| [`/chain-of-responsibility`](http://localhost:8080/demo/chain-of-responsibility) |
+| **Command** | [`/command`](http://localhost:8080/demo/command) |
+| **Interpreter** | [`/interpreter`](http://localhost:8080/demo/interpreter) |
+| **Iterator** | [`/iterator`](http://localhost:8080/demo/iterator) |
+| **Mediator** | [`/mediator`](http://localhost:8080/demo/mediator) |
+| **Memento** | [`/memento`](http://localhost:8080/demo/memento) |
+| **Observer** | [`/observer`](http://localhost:8080/demo/observer) |
+| **State** | [`/state`](http://localhost:8080/demo/state) |
+| **Template Method** | [`/template-method`](http://localhost:8080/demo/template-method) |
+| **Visitor** | [`/visitor`](http://localhost:8080/demo/visitor) |
+
+## 5. Estrutura do Código
+
+O código-fonte está organizado por categoria de padrão para facilitar a navegação:
+
+```
+trabalho-patterns/
+├── pom.xml                        (Dependências do Maven)
+└── src/main/java/com/trabalho/patterns/
+    ├── TrabalhoPatternsApplication.java (Classe 'main' que inicia o Spring)
+    ├── DemoController.java          (API REST que executa os testes)
+    │
+    ├── creational/                  (Padrões Criacionais)
+    │   ├── abstractfactory/
+    │   ├── builder/
+    │   ├── factorymethod/
+    │   ├── prototype/
+    │   └── singleton/
+    │
+    ├── structural/                  (Padrões Estruturais)
+    │   ├── adapter/
+    │   ├── bridge/
+    │   ├── composite/
+    │   ├── decorator/
+    │   ├── facade/
+    │   ├── flyweight/
+    │   └── proxy/
+    │
+    └── behavioral/                  (Padrões Comportamentais)
+        ├── chainofresponsibility/
+        ├── command/
+        ├── interpreter/
+        ├── iterator/
+        ├── mediator/
+        ├── memento/
+        ├── observer/
+        ├── state/
+        ├── strategy/
+        ├── templatemethod/
+        └── visitor/
+```
