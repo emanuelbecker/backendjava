@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-TrabalhoPatternsApplication<trabalho-patterns>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.trabalho.patterns.TrabalhoPatternsApplication",
+            "projectName": "trabalho-patterns",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
