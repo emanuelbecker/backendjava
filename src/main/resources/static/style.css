@@ -1,0 +1,84 @@
+/* Reset básico e fontes */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Layout principal com Flexbox */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Barra Lateral (Menu) */
+.sidebar {
+    width: 300px;
+    background-color: #ffffff;
+    border-right: 1px solid #e0e0e0;
+    padding: 20px;
+    box-sizing: border-box; /* Inclui padding na largura */
+    height: 100vh;
+    overflow-y: auto; /* Permite rolagem se o menu for grande */
+    position: fixed; /* Fixa o menu */
+}
+
+.sidebar h2 {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+.sidebar h3 {
+    color: #555;
+    margin-top: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 8px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.sidebar a:hover {
+    background-color: #e9ecef;
+}
+
+/* Conteúdo Principal (Resultados) */
+.content {
+    flex-grow: 1; /* Ocupa o resto do espaço */
+    padding: 30px;
+    /* Adiciona o espaço para compensar o menu fixo */
+    margin-left: 300px; 
+}
+
+.content h1 {
+    color: #333;
+}
+
+/* Caixa de Resultado */
+#resultado {
+    background-color: #ffffff;
+    border: 1px solid #d4d4d4;
+    border-radius: 8px;
+    padding: 25px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    font-family: "Courier New", Courier, monospace; /* Fonte monoespaçada para logs */
+    line-height: 1.6;
+    white-space: pre-wrap; /* Preserva quebras de linha e espaços */
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Padrões de Projeto (GoF)</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <div class="container">
+        
+        <nav class="sidebar">
+            <h2>Padrões (GoF)</h2>
+            
+            <h3>Criacionais</h3>
+            <ul id="menu-patterns">
+                <li><a href="#" data-endpoint="singleton">Singleton</a></li>
+                <li><a href="#" data-endpoint="builder">Builder</a></li>
+                <li><a href="#" data-endpoint="prototype">Prototype</a></li>
+                <li><a href="#" data-endpoint="factory-method?tipo=terra">Factory Method (Terra)</a></li>
+                <li><a href="#" data-endpoint="factory-method?tipo=mar">Factory Method (Mar)</a></li>
+                <li><a href="#" data-endpoint="abstract-factory?theme=light">Abstract Factory (Light)</a></li>
+                <li><a href="#" data-endpoint="abstract-factory?theme=dark">Abstract Factory (Dark)</a></li>
+            </ul>
+
+            <h3>Estruturais</h3>
+            <ul id="menu-patterns">
+                <li><a href="#" data-endpoint="adapter">Adapter</a></li>
+                <li><a href="#" data-endpoint="bridge">Bridge</a></li>
+                <li><a href="#" data-endpoint="composite">Composite</a></li>
+                <li><a href="#" data-endpoint="decorator">Decorator</a></li>
+                <li><a href="#" data-endpoint="facade">Façade</a></li>
+                <li><a href="#" data-endpoint="flyweight">Flyweight</a></li>
+                <li><a href="#" data-endpoint="proxy">Proxy</a></li>
+            </ul>
+
+            <h3>Comportamentais</h3>
+            <ul id="menu-patterns">
+                <li><a href="#" data-endpoint="strategy?tipo=pix">Strategy (Pix)</a></li>
+                <li><a href="#" data-endpoint="strategy?tipo=cartao">Strategy (Cartão)</a></li>
+                <li><a href="#" data-endpoint="chain-of-responsibility">Chain of Responsibility</a></li>
+                <li><a href="#" data-endpoint="command">Command</a></li>
+                <li><a href="#" data-endpoint="interpreter">Interpreter</a></li>
+                <li><a href="#" data-endpoint="iterator">Iterator</a></li>
+                <li><a href="#" data-endpoint="mediator">Mediator</a></li>
+                <li><a href="#" data-endpoint="memento">Memento</a></li>
+                <li><a href="#" data-endpoint="observer">Observer</a></li>
+                <li><a href="#" data-endpoint="state">State</a></li>
+                <li><a href="#" data-endpoint="template-method">Template Method</a></li>
+                <li><a href="#" data-endpoint="visitor">Visitor</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <h1>Catálogo de Padrões de Projeto</h1>
+            <p>Selecione um padrão no menu ao lado para ver o resultado da sua execução.</p>
+            
+            <div id="resultado">
+                </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -150,61 +150,6 @@ import com.trabalho.patterns.creational.factorymethod.LogisticaTerrestre;
 public class DemoController {
 
     /**
-     * PÁGINA INICIAL DO CATÁLOGO
-     * Mapeia para a raiz: http://localhost:8080/demo/
-     */
-    @GetMapping("/") // <-- Este é o mapeamento para a raiz
-    public String paginaInicial() {
-        
-        String html = "<h1>Catálogo de Padrões de Projeto (GoF)</h1>";
-        html += "<h3>Selecione um padrão para testar:</h3>";
-        
-        // Criando a lista de links
-        html += "<ul>";
-
-        // Criacionais
-        html += "<li><b>Criacionais</b></li>";
-        html += "<ul>";
-        html += "<li><a href='/demo/singleton'>Singleton</a></li>";
-        html += "<li><a href='/demo/builder'>Builder</a></li>";
-        html += "<li><a href='/demo/prototype'>Prototype</a></li>";
-        html += "<li><a href='/demo/factory-method'>Factory Method</a></li>";
-        html += "<li><a href='/demo/abstract-factory'>Abstract Factory</a></li>";
-        html += "</ul><br>";
-
-        // Estruturais
-        html += "<li><b>Estruturais</b></li>";
-        html += "<ul>";
-        html += "<li><a href='/demo/adapter'>Adapter</a></li>";
-        html += "<li><a href='/demo/bridge'>Bridge</a></li>";
-        html += "<li><a href='/demo/composite'>Composite</a></li>";
-        html += "<li><a href='/demo/decorator'>Decorator</a></li>";
-        html += "<li><a href='/demo/facade'>Façade</a></li>";
-        html += "<li><a href='/demo/flyweight'>Flyweight</a></li>";
-        html += "<li><a href='/demo/proxy'>Proxy</a></li>";
-        html += "</ul><br>";
-
-        // Comportamentais
-        html += "<li><b>Comportamentais</b></li>";
-        html += "<ul>";
-        html += "<li><a href='/demo/strategy'>Strategy</a></li>";
-        html += "<li><a href='/demo/chain-of-responsibility'>Chain of Responsibility</a></li>";
-        html += "<li><a href='/demo/command'>Command</a></li>";
-        html += "<li><a href='/demo/interpreter'>Interpreter</a></li>";
-        html += "<li><a href='/demo/iterator'>Iterator</a></li>";
-        html += "<li><a href='/demo/mediator'>Mediator</a></li>";
-        html += "<li><a href='/demo/memento'>Memento</a></li>";
-        html += "<li><a href='/demo/observer'>Observer</a></li>";
-        html += "<li><a href='/demo/state'>State</a></li>";
-        html += "<li><a href='/demo/template-method'>Template Method</a></li>";
-        html += "<li><a href='/demo/visitor'>Visitor</a></li>";
-        html += "</ul>";
-        
-        html += "</ul>";
-        return html;
-    }
-
-    /**
      * Demonstração do Padrão Singleton (Criacional)
      * URL: http://localhost:8080/demo/singleton
      */
